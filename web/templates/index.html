@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Tariff Benchmarking Framework</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+        }
+        .feature-card {
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .stat-card {
+            background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 1rem 0;
+        }
+        .tech-badge {
+            background: #28a745;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            margin: 0.2rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-bolt"></i> Prosumer Energy Framework</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white ms-2" href="/dashboard/">Launch Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 mb-4">Dynamic Tariff Benchmarking</h1>
+            <p class="lead mb-5">Optimize electricity costs and fairness in prosumer communities with advanced tariff structures and peer-to-peer trading</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="stat-card text-center">
+                                <h3><i class="fas fa-home"></i></h3>
+                                <h4>Multi-Building</h4>
+                                <p>Prosumer Communities</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="stat-card text-center">
+                                <h3><i class="fas fa-exchange-alt"></i></h3>
+                                <h4>P2P Trading</h4>
+                                <p>Energy Sharing</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="stat-card text-center">
+                                <h3><i class="fas fa-chart-line"></i></h3>
+                                <h4>Smart Analytics</h4>
+                                <p>Fairness Optimization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="/dashboard/" class="btn btn-light btn-lg mt-4">
+                <i class="fas fa-rocket"></i> Start Simulation
+            </a>
+        </div>
+    </section>
+
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Framework Features</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card feature-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-clock fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Dynamic Tariffs</h5>
+                            <p class="card-text">Time-of-Use, Critical Peak Pricing, Real-Time Pricing, and Emergency Demand Response</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card feature-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-solar-panel fa-3x text-success mb-3"></i>
+                            <h5 class="card-title">PV + Storage</h5>
+                            <p class="card-text">Rooftop solar panels with behind-the-meter battery storage optimization</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card feature-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-balance-scale fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">Fairness Analysis</h5>
+                            <p class="card-text">Multiple fairness metrics including Coefficient of Variation and Gini coefficient</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card feature-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-brain fa-3x text-info mb-3"></i>
+                            <h5 class="card-title">ML Surrogate</h5>
+                            <p class="card-text">XGBoost-based rapid scenario evaluation for thousands of configurations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>Optimization Technology</h3>
+                    <p class="lead">Our framework uses state-of-the-art mixed-integer linear programming (MILP) to jointly optimize:</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success me-2"></i> Load shifting and demand response</li>
+                        <li><i class="fas fa-check text-success me-2"></i> Battery charging and discharging</li>
+                        <li><i class="fas fa-check text-success me-2"></i> Peer-to-peer energy trading</li>
+                        <li><i class="fas fa-check text-success me-2"></i> Grid import/export decisions</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <i class="fas fa-cogs fa-5x text-primary mb-3"></i>
+                        <h4>Built with</h4>
+                        <div class="mt-3">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">CVXPY</span>
+                            <span class="tech-badge">XGBoost</span>
+                            <span class="tech-badge">Flask</span>
+                            <span class="tech-badge">Dash</span>
+                            <span class="tech-badge">Plotly</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="mb-4">Research Objectives</h2>
+                    <p class="lead">This framework addresses the challenge of minimizing electricity costs in prosumer communities while maintaining equitable cost distribution across all participants.</p>
+                    
+                    <div class="row mt-5">
+                        <div class="col-md-6">
+                            <div class="card border-primary">
+                                <div class="card-header bg-primary text-white">
+                                    <h5><i class="fas fa-target"></i> Primary Goal</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p>Minimize aggregate electricity cost of all prosumer buildings through optimal tariff selection and P2P trading configuration.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-success">
+                                <div class="card-header bg-success text-white">
+                                    <h5><i class="fas fa-users"></i> Fairness Focus</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p>Ensure equitable cost savings distribution using comprehensive fairness metrics and Coefficient of Variation analysis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="mb-4">Get Started</h2>
+                    <p class="lead">Ready to optimize your prosumer community? Launch the interactive dashboard to configure and run your simulations.</p>
+                    <a href="/dashboard/" class="btn btn-primary btn-lg me-3">
+                        <i class="fas fa-play"></i> Launch Dashboard
+                    </a>
+                    <a href="https://github.com/your-repo" class="btn btn-outline-light btn-lg">
+                        <i class="fab fa-github"></i> View Source
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Dynamic Tariff Benchmarking Framework</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p class="mb-0">Built for prosumer community optimization research</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
